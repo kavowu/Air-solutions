@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣空調工程解決方案中心</title>
+    <meta name="description" content="在台灣高濕氣候與高氣密建築的雙重條件下，透過 PICT 技術解決防霉、去異味、節能三大難題。">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/WETOP-LOGO-紅.png" type="image/png">
+</head>
+<body>
+    <div id="root">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html"><img src="images/WETOP-LOGO-紅.png" alt="WETOP Logo"></a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="active">首頁</a>
+                    <a href="analysis.html">問題分析</a>
+                    <a href="technology.html">技術方案</a>
+                    <a href="benefits.html">核心優勢</a>
+                    <button class="contact-btn" id="nav-contact-btn">聯絡我們</button>
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="選單">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-background">
+                <img src="images/hero-background.webp" alt="Background">
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-subtitle">台灣空調工程的系統性問題檢討</p>
+                    <h1>空調只有調溫調濕，<br>沒有淨化力</h1>
+                    <p class="hero-description">
+                        在台灣高濕氣候與高氣密建築的雙重條件下，傳統空調系統的結構性缺陷導致防霉、去異味、節能三大難題。從工程角度深入分析根本原因，並展示 PICT 技術如何補足系統功能缺口。
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="location.href='analysis.html'">深入了解</button>
+                    </div>
+                </div>
+                <div class="hero-cards">
+                    <div class="card">
+                        <div class="card-icon">🌡️</div>
+                        <h3>防霉問題</h3>
+                        <p>結露 → 黴菌滋生 → 濕度反彈</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">💨</div>
+                        <h3>去異味困難</h3>
+                        <p>污染物累積 → 悶熱感 → 使用者降溫</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⚡</div>
+                        <h3>節能困境</h3>
+                        <p>過度降溫 → 結露 → 能耗增加</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 問題分析：圖片全寬 + 卡片在下方 -->
+        <section id="analysis" class="section">
+            <div class="container">
+                <h2>台灣空調系統的惡性循環</h2>
+                <p class="section-subtitle">從密閉建築、污染物累積、到結露發霉，完整的工程因果鏈條</p>
+                <div class="section-image-full">
+                    <img src="images/空調問題的惡性循環.png" alt="台灣空調系統惡性循環圖">
+                </div>
+                <div class="problems-grid">
+                    <div class="problem-box">
+                        <h3>設計層面的缺陷</h3>
+                        <ul>
+                            <li>系統設計以顯熱負荷為主，除濕能力有限</li>
+                            <li>缺乏獨立新風處理設備</li>
+                            <li>出風口與回風口位置設計不良</li>
+                            <li>材料選用未考量防結露需求</li>
+                        </ul>
+                    </div>
+                    <div class="problem-box">
+                        <h3>施工與維護缺失</h3>
+                        <ul>
+                            <li>風管表面灰塵堆積</li>
+                            <li>冷凝水盤缺乏保溫</li>
+                            <li>濾網未定期更換清洗</li>
+                            <li>漏水導致天花板發霉</li>
+                        </ul>
+                    </div>
+                    <div class="problem-box">
+                        <h3>法規與制度缺口</h3>
+                        <ul>
+                            <li>驗收標準仍以溫度為核心</li>
+                            <li>濕度、換氣量被邊緣化</li>
+                            <li>缺乏 IAQ 納入設計的強制要求</li>
+                            <li>污染物控制標準不明確</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 露點溫度：圖片全寬 + 卡片在下方 -->
+        <section class="section dew-point-section">
+            <div class="container">
+                <h2>露點溫度：防霉的物理基礎</h2>
+                <p class="section-description">結露是熱力學必然性。當空調出風口表面溫度低於室內空氣露點溫度時，凝結水必然產生</p>
+                <div class="section-image-full">
+                    <img src="images/露點溫度關係.png" alt="露點溫度關係圖">
+                </div>
+                <div class="dew-point-cards">
+                    <div class="data-box">
+                        <h3>台灣夏季外氣條件</h3>
+                        <div class="data-item">
+                            <span class="label">乾球溫度：</span>
+                            <span class="value">33–35℃</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="label">濕球溫度：</span>
+                            <span class="value">26–28℃</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="label">露點溫度：</span>
+                            <span class="value">24–27℃</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="label">年平均相對濕度：</span>
+                            <span class="value">約 80%</span>
+                        </div>
+                    </div>
+                    <div class="data-box">
+                        <h3>工程設計基準</h3>
+                        <p><strong>設定溫度下限：</strong>不得低於 24℃（除非有獨立除濕設備）</p>
+                        <p><strong>出風口表面溫度：</strong>須高於室內露點至少 2℃（安全餘裕）</p>
+                        <p><strong>室內相對濕度：</strong>維持在 50–60% RH（WHO 黴菌生長抑制建議）</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技術方案：圖片全寬 + 功能卡 + 緊湊認證條 -->
+        <section id="technology" class="section">
+            <div class="container">
+                <h2>PICT® 技術：工程需求的對應方案</h2>
+                <p class="section-subtitle">光離子催化技術如何補足空調系統的功能缺口，解決防霉、去異味、節能三大難題</p>
+                <div class="section-image-full">
+                    <img src="images/PICT 技術原理.png" alt="PICT 技術原理圖">
+                </div>
+                <div class="features-row">
+                    <div class="feature">
+                        <h3>💧 處理氣態污染物</h3>
+                        <p>分解 VOCs、異味分子</p>
+                        <ul>
+                            <li>消除悶熱錯覺的根源</li>
+                            <li>減少使用者降溫誘因</li>
+                        </ul>
+                    </div>
+                    <div class="feature">
+                        <h3>🦠 抑制表面微生物</h3>
+                        <p>表面脫水 + 黴菌滅活</p>
+                        <ul>
+                            <li>抑制發霉與黴菌孢子</li>
+                            <li>改善室內空氣品質</li>
+                        </ul>
+                    </div>
+                    <div class="feature">
+                        <h3>⏰ 持續淨化能力</h3>
+                        <p>獨立運轉，無耗材</p>
+                        <ul>
+                            <li>關機期間仍維持防護</li>
+                            <li>24/7 全天候淨化</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="certification-compact">
+                    <div class="cert-compact-left">
+                        <img src="images/SNQ.jpg" alt="SNQ 國家品質標章" class="cert-snq-img">
+                        <div>
+                            <p class="cert-title">國家品質標章驗證</p>
+                            <p class="cert-sub">應用場域：桃園國際機場・馬偕醫院・國泰長照中心</p>
+                        </div>
+                    </div>
+                    <div class="cert-compact-divider"></div>
+                    <div class="cert-compact-right">
+                        <p class="cert-safety-title">安全性保證</p>
+                        <div class="cert-safety-tags">
+                            <span class="safety-tag">臭氧 &lt;50 ppb</span>
+                            <span class="safety-tag">符合台灣室內標準</span>
+                            <span class="safety-tag">NO₂/NOx 零容忍</span>
+                            <span class="safety-tag">人機共存安全</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 核心優勢 Teaser -->
+        <section id="benefits" class="section benefits-teaser-section">
+            <div class="container">
+                <h2>PICT 技術的工程效益</h2>
+                <p class="section-subtitle">從工程角度，PICT 如何對應空調系統的每個問題點</p>
+                <div class="benefits-teaser-grid">
+                    <div class="benefit-teaser-card">
+                        <div class="benefit-teaser-icon">🛡️</div>
+                        <h3>防霉效益</h3>
+                        <p>表面脫水 + 微生物滅活，抑制發霉與黴菌孢子濃度</p>
+                    </div>
+                    <div class="benefit-teaser-card">
+                        <div class="benefit-teaser-icon">💨</div>
+                        <h3>去異味效益</h3>
+                        <p>主動分解 VOCs 與異味分子，消除悶熱感根源</p>
+                    </div>
+                    <div class="benefit-teaser-card">
+                        <div class="benefit-teaser-icon">⚡</div>
+                        <h3>節能效益</h3>
+                        <p>消除悶熱感，允許 26–28℃ 設定，節能 15–25%</p>
+                    </div>
+                    <div class="benefit-teaser-card">
+                        <div class="benefit-teaser-icon">🔄</div>
+                        <h3>系統完整性</h3>
+                        <p>補足空調功能缺口，實現 IAQ 全面提升</p>
+                    </div>
+                </div>
+                <div style="text-align:center;margin-top:2.5rem;">
+                    <a href="benefits.html" class="btn btn-primary" style="display:inline-flex;">查看完整工程效益分析 →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>準備改善您的空調系統？</h2>
+                <p>聯絡我們的工程顧問，深入了解 PICT 技術如何應用於您的具體場景</p>
+                <button class="btn btn-large" id="cta-contact-btn">立即諮詢</button>
+            </div>
+        </section>
+
+        <!-- 頁腳 -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>關於本中心</h4>
+                        <p>為台灣空調工程從業人員提供系統性的問題診斷與 PICT 技術解決方案</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>核心內容</h4>
+                        <ul>
+                            <li><a href="index.html">首頁</a></li>
+                            <li><a href="analysis.html">問題分析</a></li>
+                            <li><a href="technology.html">技術方案</a></li>
+                            <li><a href="benefits.html">核心優勢</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>資源</h4>
+                        <ul>
+                            <li><a href="#">技術文檔</a></li>
+                            <li><a href="#">案例研究</a></li>
+                            <li><a href="#">常見問題</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>聯絡方式</h4>
+                        <p>電話：(02) XXXX-XXXX</p>
+                        <p>郵件：info@ac-solutions.tw</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 台灣空調工程解決方案中心。保留所有權利。</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('cta-contact-btn').addEventListener('click', function() {
+            showContactModal();
+        });
+    </script>
+</body>
+</html>

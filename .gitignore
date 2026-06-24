@@ -1,0 +1,10 @@
+# System files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temp & backup files
+*.bak
+*.tmp
+*~
+styles_tailwind_backup.css

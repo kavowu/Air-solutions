@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣空調工程的系統性問題檢討 - 空調解決方案中心</title>
+    <meta name="description" content="從設計、施工、法規、運維四個維度，分析台灣空調系統的結構性缺陷，了解防霉、去異味、節能三大難題的根本原因。">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/WETOP-LOGO-紅.png" type="image/png">
+</head>
+<body>
+    <div id="root">
+        <!-- 導航欄 -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/WETOP-LOGO-紅.png" alt="WETOP Logo">
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">首頁</a>
+                    <a href="analysis.html" class="active">問題分析</a>
+                    <a href="technology.html">技術方案</a>
+                    <a href="benefits.html">核心優勢</a>
+                    <button class="contact-btn" id="nav-contact-btn">聯絡我們</button>
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="選單">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero 區域 -->
+        <div class="page-hero">
+            <div class="container">
+                <h1>台灣空調工程的系統性問題檢討</h1>
+                <p>從設計、施工、法規、運維四個維度，分析空調系統的結構性缺陷</p>
+            </div>
+        </div>
+
+        <!-- Tab 導覽 -->
+        <div class="tab-nav-sticky">
+            <div class="container">
+                <div class="tabs" id="analysis-tabs">
+                    <div class="tab-list" role="tablist">
+                        <button class="tab-trigger active" role="tab" data-tab="design" aria-selected="true" aria-controls="tab-design" id="btn-design">設計層面</button>
+                        <button class="tab-trigger" role="tab" data-tab="construction" aria-selected="false" aria-controls="tab-construction" id="btn-construction">施工層面</button>
+                        <button class="tab-trigger" role="tab" data-tab="regulation" aria-selected="false" aria-controls="tab-regulation" id="btn-regulation">法規層面</button>
+                        <button class="tab-trigger" role="tab" data-tab="operation" aria-selected="false" aria-controls="tab-operation" id="btn-operation">運維層面</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 內容：設計層面 -->
+        <div class="tab-panel active" id="tab-design" role="tabpanel" aria-labelledby="btn-design">
+            <div class="container tab-content-inner">
+                <div class="problems-detail-grid">
+                    <!-- 問題 1 -->
+                    <div class="problem-detail-card">
+                        <div class="problem-detail-header">
+                            <span class="problem-icon">⚠️</span>
+                            <h3>問題 1：顯熱負荷優先，除濕能力不足</h3>
+                        </div>
+                        <div class="problem-detail-body">
+                            <p>台灣夏季外氣條件：乾球溫度 33–35℃，露點溫度 24–27℃，年平均相對濕度約 80%。</p>
+                            <p>傳統空調設計以顯熱負荷（溫度）為核心，潛熱負荷（濕度）被邊緣化。結果是：</p>
+                            <ul>
+                                <li>• 冷卻能力強，但除濕效率低</li>
+                                <li>• 室內相對濕度難以控制在 50–60% 的舒適範圍</li>
+                                <li>• 使用者感覺悶熱，傾向進一步降溫</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 問題 2 -->
+                    <div class="problem-detail-card">
+                        <div class="problem-detail-header">
+                            <span class="problem-icon">⚠️</span>
+                            <h3>問題 2：缺乏獨立新風處理</h3>
+                        </div>
+                        <div class="problem-detail-body">
+                            <p>現代建築為追求能效，設計得極其密閉。但空調系統往往缺乏獨立的新風處理單元。</p>
+                            <p>結果是：</p>
+                            <ul>
+                                <li>• 新風量不足或完全依賴滲漏</li>
+                                <li>• 室內 CO₂、VOCs、異味累積</li>
+                                <li>• 使用者錯誤地將悶熱歸因於溫度</li>
+                                <li>• 進一步降溫，加劇結露風險</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 問題 3 -->
+                    <div class="problem-detail-card">
+                        <div class="problem-detail-header">
+                            <span class="problem-icon">⚠️</span>
+                            <h3>問題 3：出風口與回風口設計不良</h3>
+                        </div>
+                        <div class="problem-detail-body">
+                            <p>許多系統的出風口設計未考慮結露風險：</p>
+                            <ul>
+                                <li>• 出風口表面溫度過低（低於室內露點）</li>
+                                <li>• 風速分布不均，局部冷點結露</li>
+                                <li>• 回風口位置不當，導致短路循環</li>
+                                <li>• 冷凝水無法及時排出</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 問題 4 -->
+                    <div class="problem-detail-card">
+                        <div class="problem-detail-header">
+                            <span class="problem-icon">⚠️</span>
+                            <h3>問題 4：材料選用未考慮防結露</h3>
+                        </div>
+                        <div class="problem-detail-body">
+                            <p>出風口、風管、冷凝水盤等材料選用往往忽視防結露需求：</p>
+                            <ul>
+                                <li>• 金屬材料導熱快，易結露</li>
+                                <li>• 缺乏防結露保溫層</li>
+                                <li>• 冷凝水盤無保溫，水溫過低</li>
+                                <li>• 材料表面粗糙，易滋生黴菌</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 改善建議 -->
+                <div class="recommendation-box">
+                    <h3>設計改善建議</h3>
+                    <div class="recommendation-grid">
+                        <div class="recommendation-item">
+                            <div class="rec-icon">✓</div>
+                            <div>
+                                <p class="rec-title">獨立新風系統</p>
+                                <p class="rec-desc">配置新風處理單元，確保新風量 ≥ 6 ACH（每小時換氣次數）</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-item">
+                            <div class="rec-icon">✓</div>
+                            <div>
+                                <p class="rec-title">除濕優先設計</p>
+                                <p class="rec-desc">將室內相對濕度控制在 50–60% 作為核心設計目標</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-item">
+                            <div class="rec-icon">✓</div>
+                            <div>
+                                <p class="rec-title">防結露出風口</p>
+                                <p class="rec-desc">出風口表面溫度 ≥ 室內露點 + 2℃（安全餘裕）</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-item">
+                            <div class="rec-icon">✓</div>
+                            <div>
+                                <p class="rec-title">材料與保溫</p>
+                                <p class="rec-desc">選用防結露材料，風管與冷凝水盤加保溫層</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 內容：施工層面 -->
+        <div class="tab-panel" id="tab-construction" role="tabpanel" aria-labelledby="btn-construction">
+            <div class="container tab-content-inner">
+                <div class="problems-detail-grid">
+                    <div class="problem-detail-card">
+                        <div class="problem-detail-header">
+                            <span class="problem-icon">⚠️</span>
+                            <h3>問題 1：風管表面灰塵堆積</h3>
+                        </div>
+                        <div class="problem-detail-body">
+                            <p>風管內部長期暴露於空氣中，灰塵、污垢、黴菌孢子不斷沉積。</p>
+                            <p>後果：</p>
+                            <ul>
+                                <li>• 風阻增加，風量下降</li>
+                                <li>• 黴菌滋生，釋放孢子</li>
+                                <li>• 異味產生，空氣品質惡化</li>
+                                <li>• 能耗增加 15–30%</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="problem-detail-card">
+                        <div class="problem-detail-header">
+                            <span class="problem-icon">⚠️</span>
+                            <h3>問題 2：冷凝水盤缺乏保溫</h3>
+                        </div>
+                        <div class="problem-detail-body">
+                            <p>冷凝水盤直接暴露在冷空氣中，表面溫度可能低於 10℃。</p>
+                            <p>結果是：</p>
+                            <ul>
+                                <li>• 冷凝水結冰，堵塞排水</li>
+                                <li>• 盤內積水，黴菌滋生</li>
+                                <li>• 異味散發，污染室內空氣</li>
+                                <li>• 漏水損害天花板和隔音棉</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="problem-detail-card">
+                        <div class="problem-detail-header">
+                            <span class="problem-icon">⚠️</span>
+                            <h3>問題 3：濾網未定期更換</h3>
+                        </div>
+                        <div class="problem-detail-body">
+                            <p>許多業主對濾網維護認識不足，導致濾網長期不換。</p>
+                            <p>危害：</p>
+                            <ul>
+                                <li>• 濾網堵塞，風量大幅下降</li>
+                                <li>• 黴菌在濾網上大量繁殖</li>
+                                <li>• 冷卻效率下降，能耗增加</li>
+                                <li>• 室內空氣品質惡化</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="problem-detail-card">
+                        <div class="problem-detail-header">
+                            <span class="problem-icon">⚠️</span>
+                            <h3>問題 4：漏水與天花板發霉</h3>
+                        </div>
+                        <div class="problem-detail-body">
+                            <p>冷凝水排水不暢或漏水，導致天花板隔音棉受潮。</p>
+                            <p>結果是：</p>
+                            <ul>
+                                <li>• 隔音棉吸水，黴菌大量滋生</li>
+                                <li>• 黴菌孢子進入室內空氣</li>
+                                <li>• 異味嚴重，影響健康</li>
+                                <li>• 維修成本高，可能需要更換天花板</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommendation-box">
+                    <h3>施工與維護改善建議</h3>
+                    <div class="recommendation-grid">
+                        <div class="recommendation-item">
+                            <div class="rec-icon">✓</div>
+                            <div>
+                                <p class="rec-title">定期清潔風管</p>
+                                <p class="rec-desc">每年至少清潔一次，使用專業風管清潔設備</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-item">
+                            <div class="rec-icon">✓</div>
+                            <div>
+                                <p class="rec-title">冷凝水盤保溫</p>
+                                <p class="rec-desc">加裝保溫層，確保盤內溫度 ≥ 15℃</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-item">
+                            <div class="rec-icon">✓</div>
+                            <div>
+                                <p class="rec-title">濾網維護計畫</p>
+                                <p class="rec-desc">建立定期更換計畫（通常 1–3 個月）</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-item">
+                            <div class="rec-icon">✓</div>
+                            <div>
+                                <p class="rec-title">排水系統檢查</p>
+                                <p class="rec-desc">定期檢查冷凝水排水暢通，防止積水</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 內容：法規層面 -->
+        <div class="tab-panel" id="tab-regulation" role="tabpanel" aria-labelledby="btn-regulation">
+            <div class="container tab-content-inner">
+                <div class="problem-detail-card full-width">
+                    <div class="problem-detail-header">
+                        <span class="problem-icon">📋</span>
+                        <h3>台灣空調驗收標準的核心問題</h3>
+                    </div>
+                    <div class="problem-detail-body">
+                        <h4>現狀：溫度中心主義</h4>
+                        <p>現行驗收標準（如 CNS、ASHRAE）以室內溫度作為核心指標，濕度、新風量、空氣品質被邊緣化。</p>
+                        <p class="sub-label">典型驗收標準：</p>
+                        <ul>
+                            <li>• 室內溫度：22–26℃（✓ 易達成）</li>
+                            <li>• 相對濕度：40–70% RH（✗ 很難達成）</li>
+                            <li>• 新風量：未明確規定或被忽視</li>
+                            <li>• IAQ 指標：不在驗收範圍內</li>
+                        </ul>
+
+                        <h4 style="margin-top: 1.5rem;">後果：設計與施工的偏差</h4>
+                        <ul>
+                            <li>• 設計師優先確保溫度達標，忽視濕度控制</li>
+                            <li>• 施工單位只關注溫度驗收，不投入除濕設計</li>
+                            <li>• 業主驗收通過後，系統實際性能與預期不符</li>
+                            <li>• 後期維修成本高，責任難以界定</li>
+                        </ul>
+
+                        <h4 style="margin-top: 1.5rem;">台灣與國際標準的對比</h4>
+                        <div class="table-wrapper">
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>標準</th>
+                                        <th>溫度</th>
+                                        <th>濕度</th>
+                                        <th>新風量</th>
+                                        <th>IAQ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>台灣 CNS</strong></td>
+                                        <td>✓ 核心</td>
+                                        <td>△ 次要</td>
+                                        <td>✗ 缺失</td>
+                                        <td>✗ 無</td>
+                                    </tr>
+                                    <tr class="alt-row">
+                                        <td><strong>ASHRAE 55</strong></td>
+                                        <td>✓ 核心</td>
+                                        <td>✓ 核心</td>
+                                        <td>✓ 明確</td>
+                                        <td>✓ 完整</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>ISO 7730</strong></td>
+                                        <td>✓ 核心</td>
+                                        <td>✓ 核心</td>
+                                        <td>✓ 明確</td>
+                                        <td>△ 部分</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recommendation-box">
+                    <h3>法規改善建議</h3>
+                    <div class="recommendation-list">
+                        <div class="recommendation-item">
+                            <div class="rec-icon">✓</div>
+                            <div>
+                                <p class="rec-title">修訂驗收標準</p>
+                                <p class="rec-desc">將濕度控制（40–60% RH）、新風量（≥6 ACH）、IAQ 指標納入驗收範圍</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-item">
+                            <div class="rec-icon">✓</div>
+                            <div>
+                                <p class="rec-title">強制 IAQ 設計</p>
+                                <p class="rec-desc">新建築設計必須納入 IAQ 考量，並在設計階段明確規定</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-item">
+                            <div class="rec-icon">✓</div>
+                            <div>
+                                <p class="rec-title">建立污染物控制標準</p>
+                                <p class="rec-desc">明確規定室內 CO₂、VOCs、PM2.5、黴菌孢子等污染物的上限</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 內容：運維層面 -->
+        <div class="tab-panel" id="tab-operation" role="tabpanel" aria-labelledby="btn-operation">
+            <div class="container tab-content-inner">
+                <div class="problems-detail-grid">
+                    <div class="problem-detail-card">
+                        <div class="problem-detail-header">
+                            <span class="problem-icon">⚠️</span>
+                            <h3>問題 1：設定溫度過低</h3>
+                        </div>
+                        <div class="problem-detail-body">
+                            <p>許多使用者將空調設定在 22–24℃，甚至更低。</p>
+                            <p>原因與後果：</p>
+                            <ul>
+                                <li>• 原因：污染物累積導致的悶熱感被誤認為溫度不足</li>
+                                <li>• 結果：出風口結露，冷凝水盤積水</li>
+                                <li>• 後果：黴菌滋生，異味加重，進一步降溫</li>
+                                <li>• 能耗：每降低 1℃，能耗增加 5–10%</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="problem-detail-card">
+                        <div class="problem-detail-header">
+                            <span class="problem-icon">⚠️</span>
+                            <h3>問題 2：缺乏定期維護計畫</h3>
+                        </div>
+                        <div class="problem-detail-body">
+                            <p>許多建築物缺乏系統的 AC 維護計畫。</p>
+                            <p>結果是：</p>
+                            <ul>
+                                <li>• 濾網長期不換，風量下降</li>
+                                <li>• 風管積塵，黴菌滋生</li>
+                                <li>• 冷凝水盤積水，異味散發</li>
+                                <li>• 系統性能逐年下降，無法察覺</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="problem-detail-card">
+                        <div class="problem-detail-header">
+                            <span class="problem-icon">⚠️</span>
+                            <h3>問題 3：缺乏 IAQ 監測</h3>
+                        </div>
+                        <div class="problem-detail-body">
+                            <p>大多數建築物沒有 IAQ 監測設備。</p>
+                            <p>後果：</p>
+                            <ul>
+                                <li>• 無法量化污染物濃度</li>
+                                <li>• 無法判斷系統是否達標</li>
+                                <li>• 無法及時發現問題</li>
+                                <li>• 業主與承包商責任難以界定</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="problem-detail-card">
+                        <div class="problem-detail-header">
+                            <span class="problem-icon">⚠️</span>
+                            <h3>問題 4：人為操作不當</h3>
+                        </div>
+                        <div class="problem-detail-body">
+                            <p>使用者對空調系統的特性認識不足。</p>
+                            <p>常見錯誤：</p>
+                            <ul>
+                                <li>• 關閉新風進口，導致空氣品質惡化</li>
+                                <li>• 長期不開窗，污染物累積</li>
+                                <li>• 忽視濾網更換，系統性能下降</li>
+                                <li>• 過度降溫，導致結露和黴菌</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommendation-box">
+                    <h3>運維改善建議</h3>
+                    <div class="recommendation-grid">
+                        <div class="recommendation-item">
+                            <div class="rec-icon">✓</div>
+                            <div>
+                                <p class="rec-title">設定溫度指南</p>
+                                <p class="rec-desc">夏季建議設定 26–28℃，冬季 20–22℃，避免過度降溫</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-item">
+                            <div class="rec-icon">✓</div>
+                            <div>
+                                <p class="rec-title">定期維護計畫</p>
+                                <p class="rec-desc">建立濾網更換、風管清潔、冷凝水盤檢查的定期計畫</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-item">
+                            <div class="rec-icon">✓</div>
+                            <div>
+                                <p class="rec-title">IAQ 監測系統</p>
+                                <p class="rec-desc">安裝 CO₂、濕度、PM2.5 等傳感器，實時監測空氣品質</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-item">
+                            <div class="rec-icon">✓</div>
+                            <div>
+                                <p class="rec-title">使用者教育</p>
+                                <p class="rec-desc">提供操作指南，幫助使用者理解 AC 系統的最佳實踐</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 核心結論 -->
+        <section class="conclusion-section">
+            <div class="container">
+                <h2>核心結論</h2>
+                <div class="conclusion-grid">
+                    <div class="conclusion-card">
+                        <h3>台灣空調系統的根本問題</h3>
+                        <p>空調系統設計、施工、法規、運維四個環節均存在結構性缺陷，導致防霉、去異味、節能三大難題無法根本解決。</p>
+                        <p>傳統的「降溫」思路只會加劇結露和黴菌問題，形成惡性循環。</p>
+                    </div>
+                    <div class="conclusion-card">
+                        <h3>PICT 技術的必要性</h3>
+                        <p>PICT 技術通過主動分解污染物、抑制微生物、消除悶熱感，打破惡性循環。</p>
+                        <p>它不是替代空調，而是補足空調系統的功能缺口，實現真正的舒適、健康、節能。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 頁腳 -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>關於本中心</h4>
+                        <p>為台灣空調工程從業人員提供系統性的問題診斷與 PICT 技術解決方案</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>核心內容</h4>
+                        <ul>
+                            <li><a href="index.html">首頁</a></li>
+                            <li><a href="analysis.html">問題分析</a></li>
+                            <li><a href="technology.html">技術方案</a></li>
+                            <li><a href="benefits.html">核心優勢</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>資源</h4>
+                        <ul>
+                            <li><a href="#">技術文檔</a></li>
+                            <li><a href="#">案例研究</a></li>
+                            <li><a href="#">常見問題</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>聯絡方式</h4>
+                        <p>電話：(02) XXXX-XXXX</p>
+                        <p>郵件：info@ac-solutions.tw</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 台灣空調工程解決方案中心。保留所有權利。</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Tab switching logic for analysis page
+        (function() {
+            const triggers = document.querySelectorAll('.tab-trigger');
+            const panels = document.querySelectorAll('.tab-panel');
+
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', function() {
+                    const targetTab = this.dataset.tab;
+
+                    // Update triggers
+                    triggers.forEach(t => {
+                        t.classList.remove('active');
+                        t.setAttribute('aria-selected', 'false');
+                    });
+                    this.classList.add('active');
+                    this.setAttribute('aria-selected', 'true');
+
+                    // Update panels
+                    panels.forEach(panel => {
+                        panel.classList.remove('active');
+                    });
+                    const targetPanel = document.getElementById('tab-' + targetTab);
+                    if (targetPanel) {
+                        targetPanel.classList.add('active');
+                        // Smooth scroll to panel
+                        targetPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
