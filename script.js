@@ -2,6 +2,22 @@
 // 台灣空調工程解決方案中心 - script.js
 // ============================================================
 
+// ---------- EmailJS Configuration ----------
+const EMAILJS_CONFIG = {
+    SERVICE_ID: 'service_fa9yesp',
+    TEMPLATE_ID: 'template_8fre5dc',
+    PUBLIC_KEY: 'K9lrQPndzYi-5iEXx',
+    TO_EMAIL: 'kavowu@wetoptec.com.tw'
+};
+
+// Initialize EmailJS
+if (typeof emailjs !== 'undefined') {
+    emailjs.init({
+        publicKey: EMAILJS_CONFIG.PUBLIC_KEY
+    });
+}
+
+
 // ---------- Mobile Menu Toggle ----------
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
@@ -248,18 +264,51 @@ function showContactModal() {
     });
 
     // Form submit
-    modal.querySelector('.contact-form').addEventListener('submit', (e) => {
+    modal.querySelector('.contact-form').addEventListener('submit', function (e) {
         e.preventDefault();
 
-        const form = modal.querySelector('.contact-form');
-        form.innerHTML = `
-            <div class="success-message">
-                <div class="success-icon">✓</div>
-                <h3>感謝您的訊息！</h3>
-                <p>我們已收到您的聯絡資訊，工程顧問將在 24 小時內回覆您。</p>
-                <button class="btn btn-primary" style="margin:0 auto;display:block;" onclick="document.querySelector('.modal').remove();document.getElementById('modal-styles').remove();document.body.style.overflow='';">關閉</button>
-            </div>
-        `;
+        if (typeof emailjs === 'undefined') {
+            alert('EmailJS 載入失敗，請檢查網路連線或稍後再試。');
+            return;
+        }
+
+        const form = this;
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+
+        // Show loading state
+        submitBtn.disabled = true;
+        submitBtn.textContent = '傳送中...';
+
+        const templateParams = {
+            to_email: EMAILJS_CONFIG.TO_EMAIL,
+            from_name: form.querySelector('#contact-name').value,
+            from_email: form.querySelector('#contact-email').value,
+            phone: form.querySelector('#contact-phone').value || '未提供',
+            company: form.querySelector('#contact-company').value || '未提供',
+            ac_type: '空調解決方案網頁諮詢',
+            description: form.querySelector('#contact-message').value
+        };
+
+        emailjs.send(
+            EMAILJS_CONFIG.SERVICE_ID,
+            EMAILJS_CONFIG.TEMPLATE_ID,
+            templateParams
+        ).then(() => {
+            form.innerHTML = `
+                <div class="success-message">
+                    <div class="success-icon">✓</div>
+                    <h3>感謝您的訊息！</h3>
+                    <p>我們已收到您的聯絡資訊，工程顧問將在 24 小時內回覆您。</p>
+                    <button class="btn btn-primary" style="margin:0 auto;display:block;" onclick="document.querySelector('.modal').remove();document.getElementById('modal-styles').remove();document.body.style.overflow='';">關閉</button>
+                </div>
+            `;
+        }).catch((err) => {
+            console.error('EmailJS submit error:', err);
+            alert('送出失敗，請稍後再試或直接聯絡我們：' + (err.text || '連線錯誤'));
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+        });
     });
 }
 
