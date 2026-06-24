@@ -1971,6 +1971,11 @@ button {
     gap: 1.5rem;
 }
 
+/* 露點溫度描述寬度優化以確保單行呈現 */
+.dew-point-section .section-description {
+    max-width: 920px;
+}
+
 /* 技術方案三功能卡橫排 */
 .features-row {
     display: grid;
